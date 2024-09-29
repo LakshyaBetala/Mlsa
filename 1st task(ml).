@@ -1,0 +1,27 @@
+Q1: Variance, Standard Deviation, and Interquartile Range (IQR) of Salaries in HR and Marketing Departments
+
+for this question i used the pandas library to read the dataset using read_csv function and found the departments present in the dataset
+department: hr, sales, research and development 
+
+after seprating the data into hr_dept and marketing dept
+
+I calculate variance using var()
+standard deviation using std()
+interquartile using quantiile()
+
+Q2: What is the range of experience in the IT department?
+
+since there is not department named IT, I assumed the IT department based on Education field == Technical degree.
+Range = max() - min() 
+
+Q3: Create a boxplot to display the experience of each department.
+
+now we use the matplotlib (library)
+
+in x axis is the department 
+in y axis is the total working years
+
+Q4:Which feature has the highest standard deviation in the dataset?
+
+since the first column is emp id which consist of numericals such as RM so we exclude the first column and filter the column only having numerical values
+then we find standard eviation for all the numeric columns and find the highest standarad deviation feature and its value
